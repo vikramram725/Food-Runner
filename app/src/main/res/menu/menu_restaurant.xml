@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/sort"
+        android:icon="@drawable/ic_sort"
+        android:title="@string/sort"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menuSort"
+                android:orderInCategory="100"
+                android:title="@string/sort" />
+            <item
+                android:id="@+id/menuSortRev"
+                android:orderInCategory="101"
+                android:title="@string/sortRev" />
+            <item
+                android:id="@+id/menuSortRate"
+                android:orderInCategory="102"
+                android:title="@string/sortRate" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.ForgotActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBarF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            android:background="@color/colorPrimaryDark"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="60dp" />
+    <!--android:contentDescription="@string/app_name"
+    android:src="@drawable/food_logo_small"-->
+
+    <TextView
+        android:id="@+id/txtWarningForgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_margin="20dp"
+        android:text="@string/warning_fp"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@id/txtMobileF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWarningForgot"
+        android:layout_margin="20dp"
+        android:background="#fff"
+        android:hint="@string/mobile_number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="6dp"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtEmailF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMobileF"
+        android:layout_margin="20dp"
+        android:background="#fff"
+        android:hint="@string/mail"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="6dp"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmailF"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/next"
+        android:textColor="#fff" />
+</RelativeLayout>

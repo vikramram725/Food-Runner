@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlSplash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.SuccessActivity">
+
+    <ImageView
+        android:id="@+id/imgSuccess"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/ic_success" />
+
+    <TextView
+        android:id="@+id/txtSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgSuccess"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Your Order has been Confirmed"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="70dp"
+        android:background="#B4FFFFFF"
+        android:text="Ok"
+        android:textColor="#DA000000"
+        android:textSize="20sp" />
+
+</RelativeLayout>

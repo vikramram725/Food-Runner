@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="120dp"
+    android:background="#fff"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="1dp">
+
+    <LinearLayout
+        android:id="@+id/llRest"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_margin="5dp" >
+
+        <ImageView
+            android:id="@+id/imgRest"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/foodie_logo"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.2">
+
+            <TextView
+                android:id="@+id/restName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                android:text="@string/restaurant"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/restName"
+                android:padding="2dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rs"
+                    android:textSize="20sp"
+                    android:padding="4dp"
+                    android:textColor="#000" />
+            <TextView
+                android:id="@+id/costPer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@string/_250"
+                android:textColor="#000"
+                android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/person"
+                    android:textSize="18sp"
+                    android:padding="4dp"
+                    android:textColor="#000" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+            <ImageButton
+                android:id="@+id/imgbtnFav"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:background="#fff"
+                android:src="@drawable/ic_fav_rest" />
+
+            <TextView
+                android:id="@+id/txtRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgbtnFav"
+                android:layout_margin="4dp"
+                android:background="#fff"
+                android:text="@string/_4_0"
+                android:textColor="#E6FFC800"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
